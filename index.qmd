@@ -14,8 +14,14 @@ library(ggplot2)
 
 ```{r}
 #| code-fold: true
+#| message: false
 mtcars %>%
   ggplot(aes(x = cyl, y= hp))+
   geom_smooth(method=lm)+
   labs(x = 'Number of Cyliders', y = 'Horsepower')
 ```
+```{r}
+hp_cyl <- lm(hp ~ cyl,data=mtcars)
+summary(hp_cyl)
+```
+

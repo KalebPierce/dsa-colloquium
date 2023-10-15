@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "webste_dud",
     "section": "",
-    "text": "Here’s my new graph.\n\n\nCode\nlibrary(dplyr)\nlibrary(readr)\nlibrary(ggplot2)\n\n\n\n\nCode\nmtcars %&gt;%\n  ggplot(aes(x = cyl, y= hp))+\n  geom_smooth(method=lm)+\n  labs(x = 'Number of Cyliders', y = 'Horsepower')\n\n\n`geom_smooth()` using formula = 'y ~ x'"
+    "text": "Here’s my new graph.\n\n\nCode\nlibrary(dplyr)\nlibrary(readr)\nlibrary(ggplot2)\n\n\n\n\nCode\nmtcars %&gt;%\n  ggplot(aes(x = cyl, y= hp))+\n  geom_smooth(method=lm)+\n  labs(x = 'Number of Cyliders', y = 'Horsepower')\n\n\n\n\n\n\nhp_cyl &lt;- lm(hp ~ cyl,data=mtcars)\nsummary(hp_cyl)\n\n\nCall:\nlm(formula = hp ~ cyl, data = mtcars)\n\nResiduals:\n   Min     1Q Median     3Q    Max \n-54.61 -25.99 -11.28  21.51 130.39 \n\nCoefficients:\n            Estimate Std. Error t value Pr(&gt;|t|)    \n(Intercept)  -51.054     24.982  -2.044   0.0499 *  \ncyl           31.958      3.884   8.229 3.48e-09 ***\n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\nResidual standard error: 38.62 on 30 degrees of freedom\nMultiple R-squared:  0.693, Adjusted R-squared:  0.6827 \nF-statistic: 67.71 on 1 and 30 DF,  p-value: 3.478e-09"
   },
   {
     "objectID": "about.html",

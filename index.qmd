@@ -12,8 +12,8 @@ library(readr)
 library(ggplot2)
 ```
 
-
 ```{r}
+#| code-fold: true
 mtcars %>%
   ggplot(aes(x = cyl, y= hp))+
   geom_smooth(method=lm)+

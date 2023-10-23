@@ -22,8 +22,41 @@ mtcars %>%
 ```
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ```{r}
 hp_cyl <- lm(hp ~ cyl,data=mtcars)
 summary(hp_cyl)
 ```
-
